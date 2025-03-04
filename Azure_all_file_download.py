@@ -3,7 +3,7 @@ import os
 
 folder_name = '-qa'
 blob_service_client = BlobServiceClient.from_connection_string('DefaultEndpointsProtocol=https;AccountName=your_account;AccountKey=your_key;EndpointSuffix=core.windows.net')
-container_client = blob_service_client.get_container_client('-spmr')
+container_client = blob_service_client.get_container_client('')
 
 print(f"Processing folder: {folder_name}")
 download_directory = 'temp'
